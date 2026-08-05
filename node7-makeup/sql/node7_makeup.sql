@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `node7_makeup_profiles` (
+    `citizenid` VARCHAR(64) NOT NULL,
+    `gender` VARCHAR(8) NOT NULL DEFAULT 'male',
+    `profile` LONGTEXT NOT NULL,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`citizenid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

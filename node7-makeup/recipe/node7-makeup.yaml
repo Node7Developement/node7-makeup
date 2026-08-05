@@ -1,0 +1,22 @@
+$engine: 3
+$onesync: on
+name: NODE7 Makeup
+author: NODE7 Development Studios
+description: Standalone native RedM makeup and facial sculpting at Node7 barber chairs, with K prompt, cash/bank checkout, and independent persistence.
+
+tasks:
+  - action: ensure_dir
+    path: ./resources/[node7]
+  - action: move_path
+    src: ./node7-makeup
+    dest: ./resources/[node7]/node7-makeup
+  - action: connect_database
+  - action: query_database
+    file: ./resources/[node7]/node7-makeup/sql/node7_makeup.sql
+  - action: append
+    file: ./server.cfg
+    text: |
+      ensure oxmysql
+      ensure node7-core
+      ensure node7-barbers
+      ensure node7-makeup

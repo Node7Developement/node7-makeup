@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NODE7 Makeup</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app" class="app" aria-hidden="true">
+        <section class="panel" aria-label="Node7 makeup chair">
+            <header class="panel-header">
+                <div>
+                    <p class="eyebrow">NODE7 STUDIO</p>
+                    <h1>Makeup Chair</h1>
+                    <p id="shopName" class="shop-name">Barber Chair</p>
+                </div>
+                <button id="closeButton" class="icon-button" type="button" aria-label="Close">×</button>
+            </header>
+
+            <nav id="tabs" class="tabs" aria-label="Makeup categories"></nav>
+
+            <div id="content" class="content"></div>
+
+            <p id="feedback" class="feedback" role="status"></p>
+
+            <footer class="checkout">
+                <div class="price-block">
+                    <span>Service</span>
+                    <strong id="price">$0</strong>
+                </div>
+                <div class="payment-buttons">
+                    <button class="payment-button" type="button" data-payment-method="cash">
+                        <span>Cash</span>
+                        <small id="cashBalance">$0 available</small>
+                    </button>
+                    <button class="payment-button" type="button" data-payment-method="bank">
+                        <span>Bank</span>
+                        <small id="bankBalance">$0 available</small>
+                    </button>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
