@@ -1,6 +1,20 @@
 [README.md](https://github.com/user-attachments/files/30730140/README.md)
 # node7-makeup
 
+
+
+
+
+
+
+
+
+
+
+<img width="1671" height="998" alt="makeupeditor" src="https://github.com/user-attachments/assets/b717acab-65f0-4868-ad36-5b277472f88e" />
+
+
+
 Standalone Node7 barber-chair editor for native facial customization.
 
 ## Included
